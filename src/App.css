@@ -1,0 +1,205 @@
+.add {
+  color: white;
+  float: right;
+}
+
+.address-form {
+  background-color: white;
+  padding: 15px;
+  margin: 15px;
+}
+
+.brand-logo {
+  font-family: 'Freckle Face', cursive;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.faq {
+  margin-bottom: 15px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  color: #ff8f00;
+  text-shadow: 1px 1px 1px black;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h4 {
+  line-height: 200%;
+}
+
+h5 {
+  text-align: center;
+  line-height: 150%;
+}
+
+#header-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: cover;
+  width: 100%;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+#hero-container {
+  background: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  justify-content: space-evenly;
+}
+
+#hero-message {
+  padding: 15px;
+  max-width: 70%;
+}
+
+.hide {
+  display: none;
+}
+
+i {
+  color: #00b0ff;
+}
+
+.button-collapse > i {
+  color: white;
+}
+
+.input-field input[type=text]:focus + label {
+  color: #ff8f00;
+}
+
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid #ff8f00;
+  box-shadow: 0 1px 0 0 #ff8f00;
+}
+
+#nav-mobile li:hover {
+  color: #00b0ff;
+}
+
+p {
+  font-size: 16px;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  overflow: hidden;
+}
+
+#phone {
+  color: white;
+  margin-right: 10px;
+}
+
+#phone-container a {
+  display: flex;
+}
+
+#phone-container p {
+  margin: 0;
+}
+
+#process {
+  justify-content: space-around;
+}
+
+.process-item p {
+  width: 75%;
+  text-align: center;
+}
+
+section {
+  min-height: 300px;
+  padding:  2.5%;
+} 
+
+#sidenav-overlay {
+  display: none;
+}
+
+/*Images*/
+
+@media only screen and (max-width: 500px) {
+  #header-image {
+    background-image: url("../src/images/123184-pxhere-s.jpg");
+  }
+}
+
+@media only screen and (min-width: 501px) {
+  #header-image {
+    background-image: url("../src/images/123184-pxhere-m.jpg");
+  }
+}
+
+@media only screen and (min-width: 801px) {
+  #header-image {
+    background-image: url("../src/images/123184-pxhere-l.jpg");
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+  #header-image {
+    background-image: url("../src/images/123184-pxhere-xl.jpg");
+  }
+}
+
+@media only screen and (min-width: 1801px) {
+  #header-image {
+    background-image: url("../src/images/123184-pxhere-xxl.jpg");
+  }
+}
+
+/*CSS*/
+
+@media only screen and (max-width: 750px) {
+  h4 {
+    font-size: 1.5rem;
+  }
+
+  #hero-container {
+    flex-direction: column;
+  }
+
+  #hero-message {
+    max-width: 100%
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  #phone {
+    color: #00b0ff;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .process-items {
+    flex-wrap: wrap;
+  }
+
+  #header-image {
+    min-height: 400px; 
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  nav .brand-logo.right {
+    font-size: 20px;
+  }
+}
