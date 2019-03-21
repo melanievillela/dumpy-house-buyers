@@ -26,9 +26,9 @@ class App extends Component {
                     </p>
                     <h5><strong>We Love Ugly Houses!</strong></h5>
                     <p>
-                    We buy ugly houses at HomeVestors mostly because we’re home buyers who like to help. You never have to worry about the condition of your home. 
-                    We’ll buy your home in as is condition, pay cash, and will close fast, regardless of your home’s ugly problems.
-                    You’re never obligated to sell your home to HomeVestors just for making an offer, and we don’t charge any fees, ever. Our process is simple and won’t cost you a thing.
+                    We buy ugly houses at Dumpy House Buyers mostly because we’re home buyers who like to help. You never have to worry about the condition of your home. 
+                    We’ll buy your home in as is condition, pay cash, and will close fast, regardless of your home’s problems.
+                    You’re never obligated to sell your home to Dumpy House Buyers just for making an offer, and we don’t charge any fees, ever. Our process is simple and won’t cost you a thing.
                     </p>                    
                 </section>
 
