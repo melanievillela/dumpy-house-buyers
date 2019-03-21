@@ -6,6 +6,16 @@ import Form from './components/Form'
 
 class App extends Component {
 
+    //Stop the 2nd li from automatically being open.
+    componentDidMount() {
+        const li = document.querySelector(".collapsible").children[1];
+        console.log(li)
+        if (li.classList.contains("active")) {
+            li.classList.remove("active");
+            li.firstElementChild.classList.remove("active");
+        }
+    }
+
     render() {
         return (
             <div className="App">
