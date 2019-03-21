@@ -13,12 +13,21 @@
   font-family: 'Freckle Face', cursive;
 }
 
+.collapsible-header {
+  line-height: 1.75rem;
+}
+
 .column {
   flex-direction: column;
 }
 
 .faq {
   margin-bottom: 15px;
+}
+
+ul .faq-list li {
+  list-style-type: disc !important;
+  padding-top: 15px;
 }
 
 .flex {
@@ -36,7 +45,7 @@ h2 {
 }
 
 h4 {
-  line-height: 200%;
+  margin: 15px;
 }
 
 h5 {
@@ -49,23 +58,26 @@ h5 {
   background-repeat: no-repeat;
   background-position: cover;
   width: 100%;
-  min-height: 600px;
+  min-height: 650px;
   display: flex;
   align-items: center;
   position: relative;
 }
 
 #hero-container {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.75);
   height: 100%;
   width: 100%;
   position: absolute;
   justify-content: space-evenly;
 }
 
+.hero-items {
+  align-items: flex-start;
+}
+
 #hero-message {
   padding: 15px;
-  max-width: 70%;
 }
 
 .hide {
@@ -93,8 +105,15 @@ i {
   color: #00b0ff;
 }
 
+.no {
+  color: #FF5733;
+  margin-right: 15px;
+}
+
 p {
   font-size: 16px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .panel {
@@ -127,8 +146,13 @@ p {
 
 section {
   min-height: 300px;
-  padding:  2.5%;
+  padding: 15px;
 } 
+
+.yes {
+  color: #2ECC71;
+  margin-right: 15px;
+}
 
 #sidenav-overlay {
   display: none;
@@ -180,20 +204,48 @@ section {
   #hero-message {
     max-width: 100%
   }
+
+  #header-image {
+    min-height: 500px;
+  }
 }
 
 @media only screen and (max-width: 700px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+
   #phone {
     color: #00b0ff;
   }
 }
 
 @media only screen and (max-width: 550px) {
+  h2 {
+    font-size: 2rem;
+    margin: 10px;
+  }
+
+  h4 {
+    margin: 5px;
+    font-size: 1.25rem;
+  }
+
+  #hero-message div {
+    flex-direction: column;
+  }
+
+  .hero-items {
+    margin: 10px;
+    width: 100%;
+  }
+
   .process-items {
     flex-wrap: wrap;
   }
 
   #header-image {
+    max-height: 550px;
     min-height: 400px; 
   }
 }
