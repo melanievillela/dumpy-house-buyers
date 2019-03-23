@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import {Button, Input, Row} from 'react-materialize'
-import axios from 'axios';
 
 class Form extends Component {
     state = {
@@ -18,27 +17,11 @@ class Form extends Component {
 
     handleFormSubmit = (e) => {
         e.preventDefault();
-        console.log(window)
-
-        const url = '/api';
-        const config = {
-            headers: {
-              "content-type": "application/json",
-            }
-          }
-
-        axios.post(url, this.state, config)        
-        .then(result => {
-            this.setState({
-            mailSent: result.data.sent
-            })
-        })
-        .catch(error => this.setState({ error: error.message }));
     }    
 
   	render() {
 		return (
-            <Row className="flex column address-form" action="/contactform.php">
+            <Row className="flex column address-form" action="http://formspree.io/melaniemedel@att.net" method="POST">
                 <Input s={12} label="First Name" name="firstName" value={this.state.firstName} onChange={(e) => this.setState({firstName: e.target.value})}/>
                 <Input s={12} label="Last Name" name="lastName" value={this.state.lastName} onChange={(e) => this.setState({lastName: e.target.value})}/>
                 <Input s={12} label="Address" name="address" value={this.state.address} onChange={(e) => this.setState({address: e.target.value})}/>
@@ -49,11 +32,6 @@ class Form extends Component {
                 <Input s={12} label="Email" name="email" value={this.state.email} onChange={(e) => this.setState({email: e.target.value})}/>
                 <br />
                 <Button className="light-blue accent-3" waves='light' onClick={(e) => this.handleFormSubmit(e)}>Submit</Button>
-                <div>
-                    {this.state.mailSent && 
-                    <div>Thank you for contcting us.</div>
-                    }
-                </div>
             </Row> 
 		)
   	}
