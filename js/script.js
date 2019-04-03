@@ -50,3 +50,25 @@ contactLinkMobile.addEventListener("click", function() {
     contact.scrollIntoView();
     window.scrollBy(0, -navHeight);
 });
+
+//Resize money icons
+const icons = document.querySelectorAll(".money");
+
+
+window.addEventListener("resize", resizeIcons);
+
+function resizeIcons() {    
+    if (window.screen.width < 800) {
+        icons.forEach(icon => {
+            icon.classList.remove("medium");
+            icon.classList.add("small");
+        });
+    } else {
+        icons.forEach(icon => {
+            icon.classList.remove("small");
+            icon.classList.add("medium");
+        });
+    }
+};
+
+resizeIcons();
