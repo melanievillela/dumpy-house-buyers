@@ -1,0 +1,167 @@
+body {
+  margin: 0 auto;
+}
+
+.brand-logo {
+  font-family: 'Freckle Face', cursive;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.collapsible-header {
+  cursor: pointer;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+
+h2 {
+  color: #ffff00;
+  text-shadow: 2px 2px 2px black;
+  font-weight: bold;
+  text-align: center;
+  margin: 15px 0 20px !important;
+}
+
+h4 {
+  margin: 15px;
+  text-shadow: 1.75px 1.75px 1.75px black;
+}
+
+h5 {
+  text-align: center;
+  line-height: 150%;
+}
+
+#header-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+#hero-container {
+  background: rgba(150, 150, 150, 0.75);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  justify-content: space-evenly;
+}
+
+.hero-items {
+  align-items: flex-start;
+}
+
+#hero-message {
+  padding: 15px;
+  height: 100%;
+  justify-content: space-evenly;
+}
+
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid black !important;
+  box-shadow: 0 1px 0 0 black !important;
+}
+
+.input-field label {
+  color: black !important;
+}
+
+.material-icons {
+  padding: 0 10px;
+}
+
+#money {
+  padding: 0;
+  width: 40px;
+}
+
+.no {
+  color: #D50000;
+}
+
+p {
+  font-size: 16px;
+  margin: 0 5px;
+  padding-bottom: 15px;
+}
+
+#phone {
+  padding-right: 15px;
+}
+
+#process {
+  justify-content: space-around;
+}
+
+.process-item p {
+  width: 75%;
+  text-align: center;
+}
+
+section {
+  padding: 15px;
+}
+
+ul .faq-list li {
+  list-style-type: disc !important;
+  padding-top: 15px;
+  margin-left: 15px;
+}
+
+.yes {
+  color: #1EC703;
+}
+
+/*Images*/
+
+@media only screen and (max-width: 500px) {
+  #header-image {
+    background-image: url("../img/123184-pxhere-s.jpg");
+  }
+}
+
+@media only screen and (min-width: 501px) {
+  #header-image {
+    background-image: url("../img/123184-pxhere-m.jpg");
+  }
+}
+
+@media only screen and (min-width: 801px) {
+  #header-image {
+    background-image: url("../img/123184-pxhere-l.jpg");
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+  #header-image {
+    background-image: url("../img/123184-pxhere-xl.jpg");
+  }
+}
+
+@media only screen and (min-width: 1801px) {
+  #header-image {
+    background-image: url("../img/123184-pxhere-xxl.jpg");
+  }
+}
