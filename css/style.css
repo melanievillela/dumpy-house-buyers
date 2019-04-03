@@ -19,15 +19,14 @@ body {
   flex-direction: column;
 }
 
+#contact {
+  padding: 0 20px;
+}
+
 .flex {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-form {
-  padding-left: 20px !important;
-  padding-right: 20px !important;
 }
 
 h2 {
@@ -190,8 +189,14 @@ ul .faq-list li {
     width: 20px;
   }
 
+  .process-item {
+    width: 100%;
+    padding: 15px;
+  }
+
   .process-items {
     flex-direction: column;
+    width: 100%;
   }
 }
 

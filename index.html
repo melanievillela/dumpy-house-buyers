@@ -286,7 +286,8 @@
 		<h2><b>Contact Us</b></h2>
 		<h5>Fill out the form below for a free, no obligation consultation and get your cash offer today!</h5>
 		<div class="row">
-			<form class="col s12">
+			<!--Form-->
+			<form class="col s12" action="https://formspree.io/melaniemedel@att.net" method="POST">
 				<div class="row">
 					<div class="input-field col s12">
 						<input id="first_name" type="text" class="validate">
@@ -330,7 +331,9 @@
 					</div>
 				</div>
 				<div class="row btn-container">
-					<a class="waves-effect waves-light btn red accent-4">Submit</a>
+					<button class="btn waves-effect waves-light red accent-4" type="submit" name="action">Submit
+						<i class="material-icons right">send</i>
+					</button>
 				</div>
 			</form>
 		</div>
